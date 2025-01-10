@@ -1,7 +1,7 @@
 const weatherForm = document.querySelector('.weatherForm');
 const cityInput = document.querySelector('.cityInput');
 const card = document.querySelector('.card');
-const apiKey = "YourApiKey"; //Your API key (https://openweathermap.org/)
+const apiKey = "YourApiKey"; //Your API Key (https://openweathermap.org/)
 
 
 weatherForm.addEventListener('submit', async event => {
@@ -22,8 +22,8 @@ weatherForm.addEventListener('submit', async event => {
 });
 
 async function getWeatherData(city) {
-    const geoApiUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`;
-    const geoResponse = await fetch(geoApiUrl);
+    const ApiUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`;
+    const geoResponse = await fetch(ApiUrl);
 
     if (!geoResponse.ok) {
         throw new Error("Could not fetch location data");
