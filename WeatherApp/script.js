@@ -46,7 +46,7 @@ async function getWeatherData(city) {
 }
 
 function displayWeatherInfo(data) {
-    console.log(data); //Testi
+    //console.log(data); //Testi
 
     const {name: city, 
            main: {temp, humidity}, 
