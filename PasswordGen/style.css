@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(hsl(180, 100%, 20%), hsl(180, 100%, 50%));
+    height: 100vh;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#box {
+    padding-top: calc(100vh / 3);
+    text-align: center;
+}
+
+
+#password {
+    background: linear-gradient(hsl(160, 90%, 20%), hsl(160, 90%, 50%));
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 18px 18px 18px 18px;
+    margin-bottom: 1rem;
+    
+}
+
+button {
+    display: inline-block;
+    margin: auto;
+    background: hsl(160, 90%, 30%);
+    border: 2px solid hsl(160, 90%, 10%);
+    border-radius: 18px 18px 18px 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+button:hover {
+    background: hsl(160, 90%, 25%);
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(-1px);
+
+}
