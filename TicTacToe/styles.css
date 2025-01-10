@@ -1,0 +1,60 @@
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #00C6FF, #0072FF);
+    font-family: 'Permanent Marker', cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+#gameContainer {
+    text-align: center;
+}
+
+
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+.cell {
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0, 0, 0, 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+    background: linear-gradient(to right, hsl(193, 100%, 60%), hsl(213, 100%, 60%));
+    background: hsl(213, 100%, 60%);
+
+}
+
+button {
+    display: inline-block;
+    margin: auto;
+    background: linear-gradient(to right, #ffaf5f, #FEB47B);
+    border: 2px solid hsl(30, 100%, 59%);
+    border-radius: 18px 18px 18px 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    padding: 0.75rem;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(-1px);
+
+}
+
+
+
+
